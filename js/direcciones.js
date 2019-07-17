@@ -92,10 +92,40 @@ direccionesModulo = (function () {
     // Calcula la ruta entre los puntos Desde y Hasta con los puntosIntermedios
     // dependiendo de la formaDeIr que puede ser Caminando, Auto o Bus/Subterraneo/Tren
   function calcularYMostrarRutas () {
-
-        /* Completar la función calcularYMostrarRutas , que dependiendo de la forma en que el
+        /* la función calcularYMostrarRutas , que dependiendo de la forma en que el
          usuario quiere ir de un camino al otro, calcula la ruta entre esas dos posiciones
          y luego muestra la ruta. */
+    /*var desde = document.getElementById("desde").value;
+    var hasta = document.getElementById("hasta").value;
+    var comoIr = document.getElementById("comoIr").value;
+    var puntosIntermedios = document.getElementById('puntosIntermedios');
+    var puntosSeleccionados = [];
+
+    var request = {
+      origin: desde,
+      destination: hasta,
+      waypoints: puntosSeleccionados,
+      travelMode: comoIr
+    };
+
+    servicioDirecciones.route(request,function(results, status) {
+          if (status === 'OK') {
+             mostradorDirecciones.setDirections(result);
+             mostradorDirecciones.suppressMarkers = false;
+          } else {
+            alert('Geocode no tuvo éxito por la siguiente razón: ' + status);
+          }
+    });
+
+    for(var i = 0; i < puntosIntermedios.length; i++) {
+      if(puntosIntermedios.options[i].selected) {
+        puntosSeleccionados.push({
+          location: puntosIntermedios[i].value,
+          stopover: true,
+        });
+      }
+    }*/
+
   }
 
   return {

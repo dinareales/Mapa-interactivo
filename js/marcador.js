@@ -16,7 +16,7 @@ marcadorModulo = (function () {
       position: ubicacion, // asigno posicion del marcador con la ubicacion
       title: "hola mundo",
       animation: google.maps.Animation.DROP,*/
-      miMarcador = new google.maps.Marker({
+    miMarcador = new google.maps.Marker({
       map: mapa,
       position: ubicacion,
       animation: google.maps.Animation.DROP,
